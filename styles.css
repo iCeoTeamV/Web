@@ -29,48 +29,62 @@ nav a {
     color: #fff;
 }
 
-.release-section {
+main {
     padding: 20px;
 }
 
-.release-grid {
-    display: flex;
-    gap: 20px;
+.popular-today {
+    margin-bottom: 40px;
 }
 
-.release-card {
+h2 {
+    margin-bottom: 20px;
+}
+
+.card, .release-card {
     background-color: #1e1e1e;
     padding: 10px;
     border-radius: 8px;
-    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.release-card img {
-    width: 100%;
+.card img, .release-card img {
+    width: 100px;
+    height: 150px;
     border-radius: 8px;
+    margin-right: 20px;
 }
 
-.release-card .info {
-    padding: 10px 0;
+.card-info, .info {
+    display: flex;
+    flex-direction: column;
 }
 
-.release-card p {
+.card-info p, .info p, .info h3 {
     margin: 0;
     font-size: 0.9em;
 }
 
-.release-card h3 {
-    margin: 5px 0 0;
-    font-size: 1em;
+.release-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.release-card {
+    width: calc(33.333% - 20px);
+}
+
+.release-card img {
+    width: 100%;
+    height: auto;
 }
 
 footer {
     text-align: center;
     padding: 20px;
     background-color: #1e1e1e;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
-  
