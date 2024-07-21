@@ -33,34 +33,30 @@ main {
     padding: 20px;
 }
 
-.popular-today {
-    margin-bottom: 40px;
-}
-
 h2 {
     margin-bottom: 20px;
 }
 
+/* Common card styles */
 .card, .release-card {
     background-color: #1e1e1e;
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 20px;
-    display: flex;
-    align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card img, .release-card img {
-    width: 100px;
-    height: 150px;
+    width: 100%;
+    height: auto;
     border-radius: 8px;
-    margin-right: 20px;
 }
 
 .card-info, .info {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .card-info p, .info p, .info h3 {
@@ -68,19 +64,26 @@ h2 {
     font-size: 0.9em;
 }
 
-.release-grid {
+.popular-today, .release-section {
+    margin-bottom: 40px;
+}
+
+.popular-today .card, .release-section .release-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Grid layout for release cards */
+.release-grid, .popular-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.release-card {
+.release-grid .release-card, .popular-grid .card {
     width: calc(33.333% - 20px);
-}
-
-.release-card img {
-    width: 100%;
-    height: auto;
 }
 
 footer {
