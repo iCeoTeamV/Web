@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.release-section {
+    padding: 20px;
+}
+
+.release-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.release-card {
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 8px;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.release-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.release-card .info {
+    padding: 10px 0;
+}
+
+.release-card p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.release-card h3 {
+    margin: 5px 0 0;
+    font-size: 1em;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+  
